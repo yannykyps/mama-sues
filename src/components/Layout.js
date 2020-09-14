@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "./Navbar"
-import Test from "./Test"
+import Hero from "./Hero"
+import Intro from "./Intro"
 
 const Layout = () => {
   
@@ -8,7 +9,8 @@ const Layout = () => {
   return (
     <>
     <Navbar />
-    <Test />
+    <Hero />
+    <Intro />
     </>
   )
 }
