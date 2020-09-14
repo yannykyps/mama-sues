@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "./Navbar"
 import Test from "./Test"
 
-const LayoutCom = () => {
+const Layout = () => {
   
 
   return (
@@ -13,4 +13,4 @@ const LayoutCom = () => {
   )
 }
 
-export default LayoutCom
+export default Layout

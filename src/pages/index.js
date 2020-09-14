@@ -1,15 +1,15 @@
 import React from "react"
-import LayoutCom from "../components/LayoutCom"
-import SEOCom from "../components/SEOCom"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const Index = () => (
-  <LayoutCom>
-    <SEOCom title="Home" />
+  <Layout>
+    <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <p>Now go build something great.</p>
-  </LayoutCom>
+  </Layout>
 )
 
 export default Index
