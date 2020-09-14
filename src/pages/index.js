@@ -1,10 +1,10 @@
 import React from "react"
 import LayoutCom from "../components/LayoutCom"
-import SEO from "../components/SEO"
+import SEOCom from "../components/SEOCom"
 
 const Index = () => (
   <LayoutCom>
-    <SEO title="Home" />
+    <SEOCom title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
