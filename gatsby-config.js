@@ -10,7 +10,7 @@ module.exports = {
     author: "Yanny Kyprianou",
     twitterUsername: "@yannykyps",
     image: "/twitter-img.png",
-    siteUrl: "https://www.mamasues.com",
+    siteUrl: "https://www.mamasues.netlify.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
