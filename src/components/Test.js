@@ -17,7 +17,6 @@ const query = graphql`
 
 const Test = () => {
     const {allContentfulInfo:{nodes:info},} = useStaticQuery(query);
-    console.log(info);
     return (
         <div>
             {info.map((info) => {

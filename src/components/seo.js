@@ -16,7 +16,7 @@ const query = graphql`
     }
   }
 `
-const Seo = ({title, description}) => {
+const SEO = ({title, description}) => {
   const {site} = useStaticQuery(query);
   const {siteDesc, siteTitle, siteUrl, author, image, twitterUsername} = site.siteMetadata
   return <Helmet htlmAttributes={{lang:"en"}} title={`${title} | ${siteTitle}`}>
@@ -32,4 +32,4 @@ const Seo = ({title, description}) => {
   </Helmet>
 }
 
-export default Seo
+export default SEO
