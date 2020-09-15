@@ -27,7 +27,7 @@ const MainSection = () => {
        <Wrapper>
            <section>
            <section className="section-center">
-           <h2 className="div-title">Our Signature Dishes</h2>
+           <h2 className="div-title">Signature Dishes</h2>
            {images.map((item, index) => {
                return (<article key={index} className={`main div-${index}`}>
                <div className="overlay"><h3 className="title">{item.image.title}</h3></div>
@@ -66,7 +66,7 @@ section {
 .div-title {
     color: white;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -124,7 +124,7 @@ section h3 {
   opacity: 1;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
   /* .img {
     height: 19rem;
   } */
@@ -134,6 +134,7 @@ section h3 {
     padding-top: 0px;
     width: 100vw;
   }
+
 }
 
 @media screen and (min-width: 768px) {
