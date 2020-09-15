@@ -78,5 +78,26 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 /* .contact:hover .contact-overlay {
   opacity: 1;
 } */
+@media screen and (min-width: 300px) {
+  .contact-img {
+    height: 9rem;
+    
+}
 
+}
+
+@media screen and (min-width: 768px) {
+  .contact-img {
+    height: 15rem;
+    
+}
+}
+
+@media screen and (min-width: 992px) {
+  .contact-img {
+    height: 19rem;
+    
+}
+    
+  }
 `
