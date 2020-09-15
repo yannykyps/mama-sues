@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logo.jpeg"
+import logo from "../images/logonew1.svg"
 import { BiFoodMenu } from "react-icons/bi"
 import Links from "../constants/links"
 import styled from "styled-components"
@@ -34,7 +34,12 @@ const Wrapper = styled.section`
   align-items: center;
   z-index: 200;
   /* testing */
-  background: black;
+  /* background: black; */
+}
+
+.logo {
+  width: 150px;
+  margin-top: 80px;
 }
 
 .nav-center {
@@ -72,12 +77,22 @@ const Wrapper = styled.section`
 .nav-links {
   display: none;
 }
+@media screen and (min-width: 374px) {
+.logo {
+  width: 100px;
+  margin-top: 40px;
+}
 
+}
 @media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
   }
 
+  .logo {
+  width: 150px;
+  margin-top: 80px;
+}
   .nav-links {
     display: flex;
     justify-content: flex-end;
