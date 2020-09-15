@@ -14,6 +14,7 @@ const Hero = () => {
           <HeroTitle />
           <h2>Home Cooked Food At Its Best</h2>
           <SocialLinks styleClass="social"/>
+          <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
           <a className="order" href="https://www.orderswift.com/" target="_new">Order & Collect</a>
         </article>
     </Background>
@@ -60,6 +61,20 @@ const Wrapper = styled.section`
   background: green;
 }
 
+.tel {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.tel a {
+  color: white;
+}
+
+.tel a:hover {
+  color: red;
+}
   /* .hero-center {
   height: 100%;
   display: grid;

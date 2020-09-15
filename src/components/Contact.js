@@ -24,7 +24,7 @@ const Contact = () => {
     return (
         <Wrapper>
         {images.map((item, index) => {
-            return (<a href={`/${item.title}`}><article key={index} className="contact">
+            return (<a href={`/${item.title}`} key={index}><article key={index} className="contact">
             <div className="contact-overlay"><h3 className="contact-title">{item.image.title}</h3></div>
              <Image fluid={item.image.fluid} className="contact-img"/>
             </article></a>
