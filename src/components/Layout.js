@@ -1,16 +1,18 @@
 import React from "react"
 import Navbar from "./Navbar"
-import Hero from "./Hero"
-import Intro from "./Intro"
+import Sidebar from "./Sidebar"
 
-const Layout = () => {
-  
 
-  return (
-    <>
-    <Navbar />
-    <Hero />
-    <Intro />
+const Layout = ({children}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+  }
+
+  return (<>
+    <Navbar toggleSidebar={toggleSidebar}/>
+    <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
+    {children}
     </>
   )
 }

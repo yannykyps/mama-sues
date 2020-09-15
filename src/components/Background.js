@@ -40,14 +40,17 @@ const fadeIn = keyframes`
       `
 
 const Wrapper = styled.section`
+
   .bcg {
     /* MUST!!!!!! */
-    min-height: 80vh;
+    min-height: 100vh;
     /* margin-top: 0rem; */
     display: grid;
     place-items: center;
-
     animation: ${fadeIn} 2s ease-in-out 1 forwards;
+    max-width: 1170px; 
+    margin: 0 auto;
+
   }
 
   .bcg::before {

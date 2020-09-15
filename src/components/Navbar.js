@@ -38,7 +38,7 @@ const Wrapper = styled.section`
 }
 
 .nav-center {
-  width: 90vw;
+  width: 95vw;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -55,6 +55,9 @@ const Wrapper = styled.section`
 
 .toggle-btn {
   font-size: 2rem;
+  position: absolute;
+  right: 2.5%;
+  top: 30%;
   background: transparent;
   border-color: transparent;
   color: white;

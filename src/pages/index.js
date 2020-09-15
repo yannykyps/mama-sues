@@ -1,14 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import Hero from "../components/Hero"
+import Footer from "../components/Footer"
+import MainSection from "../components/MainSection"
 
 const Index = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Now go build something great.</p>
+    <Hero />
+    <MainSection />
+    <Footer />
   </Layout>
 )
 
