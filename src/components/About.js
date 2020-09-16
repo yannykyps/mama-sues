@@ -2,20 +2,38 @@ import React from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import logo from "../images/logonew1.svg"
 
 const query = graphql`
   {
     allContentfulAbout {
       nodes {
         title
-        content {
-          content
+        content1 {
+          content1
         }
+        content2 {
+            content2
+          }
+          content3 {
+            content3
+          }
+          content4 {
+            content4
+          }
+          content5 {
+            content5
+          }
         image {
           fluid {
             ...GatsbyContentfulFluid
           }
         }
+        image2 {
+            fluid {
+                ...GatsbyContentfulFluid
+            }
+          }
       }
     }
   }
@@ -32,7 +50,12 @@ const {allContentfulAbout:{nodes:about},} = useStaticQuery(query);
 <section className="about-section">
   <h1>{about[0].title}</h1>
   <Image fluid={about[0].image.fluid} className="about-img"/>
-  <p>{about[0].content.content}</p>
+  <p>{about[0].content1.content1}</p>
+  <Image fluid={about[0].image2.fluid} className="about-img" alt="logo"/>
+  <p>{about[0].content2.content2}</p>
+  <img className="about-logo" alt="logo" src={logo} />
+  <p>{about[0].content3.content3}</p>
+
 
 </section>  
         </Wrapper>
@@ -43,24 +66,34 @@ export default About
 
 const Wrapper = styled.section`
 
+
 .about-section {  
   margin-top: -5vw;
-  background-image: linear-gradient(135deg, #777, #111);
+  background: var(--grey);
   padding-bottom: 50px;
-
+  text-align: center; 
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
 .about-section p {
     color: white;
     /* width: 90vh; */
-    margin: auto;
-    width: 80%;
+    margin: 50px auto;
+    max-width: 100vh;
 } 
+
+.about-logo {
+    width: 300px;
+  
+  font-family:'Kristen ITC';
+}
 
 header {
   margin-top: 5rem;  
   position: relative;
   height: 300px;
-  background: black;
+  background: var(--black);
   clip-path: polygon(
     0 0,
     100% 0,
@@ -74,17 +107,17 @@ h1 {
   margin: 0;
   padding-top: 100px;
   padding-bottom: 50px;
-  font: 44px "Arial";
   color: white;
   text-align: center;
 }
 
 .about-img {
-    max-width: 80vh;
+    /* max-width: 80vh; */
     transition: .5s ease;
     position: relative;
     margin: 0 auto;
     margin-bottom: 50px;
+    max-width: 80vh;
 
 }
 

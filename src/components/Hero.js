@@ -1,24 +1,38 @@
 import React from "react"
 import HeroTitle from "./HeroTitle"
 import styled from "styled-components"
+import moment from "moment"
 
 import Background from "./Background"
 import SocialLinks from "../constants/SocialLinks"
 
 const Hero = () => {
+  const format = 'HH:mm:ss'
+  const time = moment().format(format);
+  const open = moment("17:00:00", format);
+  const close = moment("23:00:00", format);
+  const [isOpen, setIsOpen] = React.useState("Closed");
+  
+  React.useEffect(() => {
+    if (moment(time, format).isBetween(open, close)) {
+      setIsOpen("Open");
+    } else {
+      setIsOpen("Closed");
+    }
+  }, [isOpen, time, close, open, format]);
+
   return (<Wrapper>
   <header className="hero">
   <div className="hero-center">
   <Background>
       <article className="hero-info">
           <HeroTitle />
-          <h2>Home Cooked Food At Its Best</h2>
-          <SocialLinks styleClass="social"/>
           <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
+          <h2>We are <span className={isOpen}>{isOpen}</span></h2>
           <a className="order" href="https://www.orderswift.com/" target="_new">Order & Collect</a>
+          <SocialLinks styleClass="social"/>
         </article>
     </Background>
-    
     </div>
   </header>
   </Wrapper>
@@ -36,21 +50,25 @@ const Wrapper = styled.section`
 
 .social {
   margin: auto;
+  margin-top: 2rem;
 
+}
+
+.Open {
+  color: var(--green)
+}
+
+.Closed {
+  color: var(--red)
 }
 
 .order {
   text-transform: uppercase;
-  background: red;
+  background: var(--red);
   color: white;
-  padding: 0.375rem 0.75rem;
-  margin-top: 2rem;
   display: inline-block;
-  font-weight: 700;
-  -webkit-transition: var(--transition);
+   -webkit-transition: var(--transition);
   transition: var(--transition);
-  font-size: 1.5rem;
-  border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
@@ -58,7 +76,7 @@ const Wrapper = styled.section`
 
 
 .order:hover {
-  background: green;
+  background: var(--green);
 }
 
 .tel {
@@ -73,7 +91,7 @@ const Wrapper = styled.section`
 }
 
 .tel a:hover {
-  color: red;
+  color: var(--red);
 }
   /* .hero-center {
   height: 100%;
@@ -88,4 +106,22 @@ const Wrapper = styled.section`
     width: 85vw;
     max-width: 800px;
   } 
+  @media screen and (min-width: 374px) {
+    .order {
+  padding: 0.275rem 0.55rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid transparent;
+}
+  }
+  @media screen and (min-width: 768px) {
+    .order {
+  padding: 0.375rem 0.75rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+}
+  }
   `

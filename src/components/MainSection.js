@@ -27,7 +27,10 @@ const MainSection = () => {
        <Wrapper>
            <section>
            <section className="section-center">
-           <h2 className="div-title">Signature Dishes</h2>
+           <article className="signature"><h2 >Signature Dishes</h2>
+           <h3>We pride ourselves on making tasty dishes</h3>
+           </article>
+           
            {images.map((item, index) => {
                return (<article key={index} className={`main div-${index}`}>
                <div className="overlay"><h3 className="title">{item.image.title}</h3></div>
@@ -52,7 +55,7 @@ export default MainSection
 const Wrapper = styled.section`
 section {
     padding: 0;
-    background: black; 
+    background: var(--black); 
     display: grid;
     text-align: center;
     position: relative;
@@ -63,15 +66,26 @@ section {
   position: relative;
 }
 
+.signature {
+  padding: 0 2rem;
+    background: var(--black); 
+    display: grid;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+
+
 .div-title {
     color: white;
-    position: absolute;
+    /* position: absolute;
     top: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    z-index: 1;
+    -ms-transform: translate(-50%, -50%); */
+    /* z-index: 1; */
     margin-top: 0;
 }
 
@@ -165,7 +179,7 @@ section h3 {
       .div-3 {
         grid-area: d;
       }
-      .div-title {
+      .signature {
         grid-area: z;
       }
       .div-contact {
@@ -200,7 +214,7 @@ section h3 {
       .div-3 {
         grid-area: d;
       }
-      .div-title {
+      .signature {
         grid-area: z;
       }
       .div-contact {

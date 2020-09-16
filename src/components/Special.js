@@ -69,7 +69,7 @@ const Wrapper = styled.div`
   position: absolute;
   top: 80%;
   left: 50%;
-  background: red;
+  background: var(--red);
   color: white;
   padding: 0.375rem 0.75rem;
   margin-top: 2rem;
@@ -88,7 +88,7 @@ const Wrapper = styled.div`
 
 
 .order:hover {
-  background: green;
+  background: var(--green);
 }
 
 `

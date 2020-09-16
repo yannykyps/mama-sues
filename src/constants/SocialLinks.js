@@ -47,7 +47,6 @@ export default ({ styleClass }) => {
 const Wrapper = styled.section`
 .social-links {
   margin-top: 2rem;
-  width: 15rem;
   display: flex;
   justify-content: space-between;
   padding-inline-start: 0px;
@@ -60,6 +59,31 @@ const Wrapper = styled.section`
 }
 
 .social-link:hover {
-  color: red;
+  color: var(--red);
+}
+
+.social-link {
+  color: white;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 374px) {
+  .social-link {
+  font-size: 2rem;
+  }
+  .social-links {
+  width: 10rem;
+  margin: auto;
+ 
+}
+}
+
+@media screen and (min-width: 768px) {
+  .social-link {
+  font-size: 3rem;
+  }
+  .social-links {
+  width: 15rem;
+}
 }
 `

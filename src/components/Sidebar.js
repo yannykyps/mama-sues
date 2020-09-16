@@ -31,7 +31,7 @@ export default Sidebar
 const Wrapper = styled.div`
 .sidebar {
   /* background: var(--clr-light-shade); */
-  background: black;
+  background: var(--black);
   position: fixed;
   top: 0;
   left: 0;
@@ -53,15 +53,15 @@ const Wrapper = styled.div`
 .tel {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .tel a {
-  color: red;
+  color: var(--red);
 }
 
 .tel a:hover {
-  color: green;
+  color: var(--green);
 }
 
 .show-sidebar {
@@ -90,7 +90,7 @@ const Wrapper = styled.div`
 }
 
 .sidebar-links li a:hover {
-  color: green;
+  color: var(--green);
 }
 
 .close-btn {
@@ -100,7 +100,7 @@ const Wrapper = styled.div`
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: red;
+  color: var(--red);
   cursor: pointer;
 }
 

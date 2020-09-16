@@ -40,6 +40,7 @@ const Wrapper = styled.section`
 .logo {
   width: 150px;
   margin-top: 80px;
+  font-family:'Kristen ITC';
 }
 
 .nav-center {
@@ -71,13 +72,13 @@ const Wrapper = styled.section`
 }
 
 .toggle-btn:hover {
-  color: green;
+  color: var(--green);
 }
 
 .nav-links {
   display: none;
 }
-@media screen and (min-width: 374px) {
+@media screen and (min-width: 319px) {
 .logo {
   width: 100px;
   margin-top: 40px;
@@ -112,7 +113,7 @@ const Wrapper = styled.section`
   }
 
   .nav-links a:hover {
-    color: green;
+    color: var(--green);
     box-shadow: 0px 2px var(--clr-ui-success);
   }
 

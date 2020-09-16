@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
+import styled from "styled-components"
 
 const query = graphql`
 {
@@ -18,18 +19,38 @@ const query = graphql`
 const HeroTitle = () => {
     const {allContentfulInfo:{nodes:info},} = useStaticQuery(query);
     return (
-        <div>
+        <Wrapper>
             {info.map((info) => {
                 return (
                 <div key={info.id}>
-                <h1>{info.title}</h1>
+                <h1 className="info-title">{info.title}</h1>
                 </div>
                 )
 
             })}
-        </div>
+        </Wrapper>
     )
 }
 
 export default HeroTitle
+
+const Wrapper = styled.div`
+
+.info-title {
+  font-family:'Kristen ITC';
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 374px) {
+    .info-title {
+      font-size: 2rem;
+
+}
+  }
+  @media screen and (min-width: 768px) {
+    .info-title {
+      font-size: 2.75rem;
+}
+  }
+`
 

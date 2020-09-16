@@ -14,7 +14,7 @@ const Wrapper = styled.footer`
   height: 5rem;
   display: grid;
   place-items: center;
-  background: black;
+  background: var(--black);
   text-align: center;
   padding: 1rem;
   p {
@@ -25,14 +25,14 @@ const Wrapper = styled.footer`
     }
   }
   a {
-    color: red;
+    color: var(--red);
     margin-bottom: 0;
     @media (max-width: 576px) {
       font-size: 0.75rem;
     }
   }
   a:hover {
-    color: green;
+    color: var(--green);
   }
 `
 export default Footer
