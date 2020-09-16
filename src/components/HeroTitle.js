@@ -37,7 +37,6 @@ export default HeroTitle
 const Wrapper = styled.div`
 
 .info-title {
-  font-family:'Kristen ITC';
   text-transform: uppercase;
 }
 

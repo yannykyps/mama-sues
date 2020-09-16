@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logonew1.svg"
+import logo from "../images/logonew11.svg"
 import { BiFoodMenu } from "react-icons/bi"
 import Links from "../constants/links"
 import styled from "styled-components"
