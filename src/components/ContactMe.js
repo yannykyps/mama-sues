@@ -70,7 +70,7 @@ const Wrapper = styled.section`
 }
 
 .tel {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0 0 1.5rem 0;
 }
@@ -112,10 +112,11 @@ const Wrapper = styled.section`
 
 .form-control {
   /* display: block; */
-  width: 90%;
+  width: 100%;
   padding: 0.75rem 1rem;
   border: 1px solid var(--red);
   margin-bottom: 1.25rem;
+  margin-left: -1rem;
   background: white;
   border-radius: var(--radius);
   /* letter-spacing: var(--spacing); */
