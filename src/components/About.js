@@ -85,8 +85,6 @@ const Wrapper = styled.section`
 
 .about-logo {
     width: 300px;
-  
-  font-family:'Kristen ITC';
 }
 
 header {
