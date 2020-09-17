@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import HeroTitle from "./HeroTitle"
 import styled from "styled-components"
-import {GatsbyContext} from "../context/context"
+import { GatsbyContext } from "../context/context"
 
 import Background from "./Background"
 import SocialLinks from "../constants/SocialLinks"
