@@ -10,6 +10,7 @@
   --green: #7dac20;
   --grey: #323232;
   --black: #000000;
+  --greenrgba: rgba(125, 172, 32, 0.5);
 }
 
 body {
@@ -19,11 +20,11 @@ body {
   line-height: 1.5;
 }
 
-.section-center {
-  width: 90vw;
+/* .section-center {
+  width: 100vw;
   margin: 0 auto;
   max-width: 1170px;
-}
+} */
 
 ul {
   list-style-type: none;

@@ -4,6 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Special from './Special'
 import Contact from './Contact'
+import chilliRight from "../images/chilli.png"
+import chilliLeft from "../images/chilli1.png"
 
 const query = graphql`
 {
@@ -25,9 +27,15 @@ const MainSection = () => {
     const {allContentfulMain:{nodes:images},} = useStaticQuery(query);
     return (
        <Wrapper>
-           <section>
+           <section className="main-section">
            <section className="section-center">
-           <article className="signature"><h2 >Signature Dishes</h2>
+           <article className="signature">
+           
+           <h2 >
+           <img className="chilli-img-left" alt="logo" src={chilliLeft} />
+           Signature Dishes
+           <img className="chilli-img-right" alt="logo" src={chilliRight} />
+           </h2>
            <h3>We pride ourselves on making tasty dishes</h3>
            </article>
            
@@ -53,12 +61,15 @@ export default MainSection
 
 
 const Wrapper = styled.section`
-section {
+margin: auto;
+
+.main-section {
     padding: 0;
     background: var(--black); 
     display: grid;
     text-align: center;
     position: relative;
+    
 }
 
 .main {
@@ -126,9 +137,15 @@ section h3 {
   text-align: center;
 }
 
-/* article:hover, .special-img:hover {
-  opacity: 0.2;
-} */
+.chilli-img-left {
+  float: left;
+  margin-bottom: -40px;
+}
+
+.chilli-img-right {
+  float: right;
+  margin-bottom: -40px;
+}
 
 .main:hover .img {
   opacity: 0.2;
@@ -146,8 +163,17 @@ section h3 {
     grid-template-columns: 1fr;
     display: grid;
     padding-top: 0px;
-    width: 100vw;
+    width: 100%;
   }
+  .chilli-img-left {
+  height: 2rem;
+  margin-left: -20px;
+}
+
+.chilli-img-right {
+  height: 2rem;
+  margin-right: -20px;
+}
 
 }
 
@@ -159,7 +185,7 @@ section h3 {
   .section-center {
     grid-template-columns: 1fr 1fr;
     padding-top: 0px;
-    width: 100vw;
+    width: 100%;
     display: grid;
       grid-template-areas:
         "z z"
@@ -186,13 +212,20 @@ section h3 {
         grid-area: e;
       }
   }
+  .chilli-img-left {
+  height: 5rem;
+}
+
+.chilli-img-right {
+  height: 5rem;
+}
 }
 
 @media screen and (min-width: 992px) {
   .section-center {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     max-width: 1170px;
     padding-top: 0px;
@@ -220,8 +253,15 @@ section h3 {
       .div-contact {
         grid-area: e
       }
-    
   }
+
+  .chilli-img-left {
+  height: 5rem;
+}
+
+.chilli-img-right {
+  height: 5rem;
+}
 
 }
   `

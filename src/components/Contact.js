@@ -48,7 +48,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 
 .contact-title {
     color: white;
-
 }
 
 .contact-img {

@@ -55,6 +55,7 @@ const Wrapper = styled.section`
   text-align: center; 
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 20px;
 }
 
 .address-section {
@@ -90,13 +91,13 @@ const Wrapper = styled.section`
 } 
 
 .contact-form {
-  background: white;
+  background: var(--black);
   border-radius: var(--radius);
   text-align: center;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
   margin-bottom: 2rem;
-  max-width: 1070px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -116,7 +117,8 @@ const Wrapper = styled.section`
   padding: 0.75rem 1rem;
   border: 1px solid var(--red);
   margin-bottom: 1.25rem;
-  margin-left: -1rem;
+  /* margin-left: -1.05rem; */
+  margin-left: -17px;
   background: white;
   border-radius: var(--radius);
   /* letter-spacing: var(--spacing); */
@@ -153,7 +155,7 @@ const Wrapper = styled.section`
 header {
   margin-top: 5rem;  
   position: relative;
-  height: 300px;
+  height: 250px;
   background: var(--black);
   clip-path: polygon(
     0 0,

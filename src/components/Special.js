@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import {GatsbyContext} from "../context/context"
 
 const query = graphql`
 {
@@ -18,13 +19,16 @@ const query = graphql`
 `
 
 const Special = () => {
+    const {isOpen} = useContext(GatsbyContext);
     const {contentfulSpecial} = useStaticQuery(query);
     return (
         <Wrapper>
             <h2 className="special-title">{contentfulSpecial.image.title}</h2>
             <h3 className="content">{contentfulSpecial.content}</h3>
             <Image fluid={contentfulSpecial.image.fluid} className="special-img" />
-            <a className="order" href="https://www.orderswift.com/" target="_new">Order Now</a>
+            {isOpen === "open" ? <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Order Now</a>:
+          <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Pre-Order</a>}
+            {/* <a className="order" href="https://www.orderswift.com/" target="_new">Order Now</a> */}
         </Wrapper>
     )
 }
@@ -88,7 +92,16 @@ const Wrapper = styled.div`
 
 
 .order:hover {
-  background: var(--green);
+  background: var(--greenrgba);
+  /* transform: translateY(-3px); */
+}
+
+.open-button {
+  background: var(--green)
+}
+
+.closed-button {
+  background: var(--red)
 }
 
 `

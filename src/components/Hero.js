@@ -1,26 +1,14 @@
-import React from "react"
+import React, { useContext } from "react"
 import HeroTitle from "./HeroTitle"
 import styled from "styled-components"
-import moment from "moment"
+import {GatsbyContext} from "../context/context"
 
 import Background from "./Background"
 import SocialLinks from "../constants/SocialLinks"
 
 const Hero = () => {
-  const format = 'HH:mm:ss'
-  const time = moment().format(format);
-  const open = moment("17:00:00", format);
-  const close = moment("23:00:00", format);
-  const [isOpen, setIsOpen] = React.useState("Closed");
+  const {isOpen} = useContext(GatsbyContext);
   
-  React.useEffect(() => {
-    if (moment(time, format).isBetween(open, close)) {
-      setIsOpen("Open");
-    } else {
-      setIsOpen("Closed");
-    }
-  }, [isOpen, time, close, open, format]);
-
   return (<Wrapper>
   <header className="hero">
   <div className="hero-center">
@@ -29,7 +17,8 @@ const Hero = () => {
           <HeroTitle />
           <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
           <h2>We are <span className={isOpen}>{isOpen}</span></h2>
-          <a className="order" href="https://www.orderswift.com/" target="_new">Order & Collect</a>
+          {isOpen === "open" ? <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Order Now</a>:
+          <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Pre-Order</a>}
           <SocialLinks styleClass="social"/>
         </article>
     </Background>
@@ -54,21 +43,30 @@ const Wrapper = styled.section`
 
 }
 
-.Open {
+.open {
   color: var(--green)
 }
 
-.Closed {
+.closed {
   color: var(--red)
+}
+
+.open-button {
+  background: var(--green)
+}
+
+.closed-button {
+  background: var(--red)
 }
 
 .order {
   text-transform: uppercase;
-  background: var(--red);
+  /* background: var(--red); */
   color: white;
   display: inline-block;
    -webkit-transition: var(--transition);
-  transition: var(--transition);
+  /* transition: var(--transition); */
+  transition: transform 0.2s ease;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
@@ -76,7 +74,9 @@ const Wrapper = styled.section`
 
 
 .order:hover {
-  background: var(--green);
+  background: var(--greenrgba);
+  /* transform: translateY(-3px); */
+  
 }
 
 .tel {

@@ -7,6 +7,9 @@ const menu = () => {
     return (
         <Layout>
         <SEO title="Menu" />
+        <section>
+            <h1>Menu Here</h1>
+        </section>
         <Footer />
         </Layout>
     )

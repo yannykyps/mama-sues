@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from "../images/logonew11.svg"
-import { BiFoodMenu } from "react-icons/bi"
+import logo from "../images/logomamasues.svg"
+import { HiMenu } from "react-icons/hi"
+
 import Links from "../constants/links"
 import styled from "styled-components"
 
@@ -11,7 +12,7 @@ const Navbar = ({toggleSidebar}) => {
             <div className="nav-header">
                 <img className="logo" src={logo} alt="logo" />
                 <button className="toggle-btn" onClick={toggleSidebar}>
-                <BiFoodMenu />
+                <HiMenu />
                 </button>
             </div>
             <Links styleClass="nav-links" />

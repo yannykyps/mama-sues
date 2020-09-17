@@ -2,7 +2,8 @@ import React from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import logo from "../images/logonew1.svg"
+import logo from "../images/logomamasues.svg"
+
 
 const query = graphql`
   {
@@ -53,6 +54,7 @@ const {allContentfulAbout:{nodes:about},} = useStaticQuery(query);
   <p>{about[0].content1.content1}</p>
   <Image fluid={about[0].image2.fluid} className="about-img" alt="logo"/>
   <p>{about[0].content2.content2}</p>
+  
   <img className="about-logo" alt="logo" src={logo} />
   <p>{about[0].content3.content3}</p>
 
@@ -65,12 +67,14 @@ const {allContentfulAbout:{nodes:about},} = useStaticQuery(query);
 export default About
 
 const Wrapper = styled.section`
-
+max-width: 1170px;
+margin: auto;
 
 .about-section {  
   margin-top: -5vw;
   background: var(--grey);
   padding-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center; 
   padding-left: 50px;
   padding-right: 50px;
@@ -90,7 +94,8 @@ const Wrapper = styled.section`
 header {
   margin-top: 5rem;  
   position: relative;
-  height: 300px;
+  height: 250px;
+  text-align: center;
   background: var(--black);
   clip-path: polygon(
     0 0,
@@ -106,7 +111,7 @@ h1 {
   padding-top: 100px;
   padding-bottom: 50px;
   color: white;
-  text-align: center;
+
 }
 
 .about-img {
@@ -118,6 +123,7 @@ h1 {
     max-width: 80vh;
 
 }
+
 
 `
 
