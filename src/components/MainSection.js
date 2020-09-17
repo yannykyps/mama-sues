@@ -140,11 +140,13 @@ section h3 {
 .chilli-img-left {
   float: left;
   margin-bottom: -40px;
+  height: 5rem;
 }
 
 .chilli-img-right {
   float: right;
   margin-bottom: -40px;
+  height: 5rem;
 }
 
 .main:hover .img {
@@ -167,12 +169,12 @@ section h3 {
   }
   .chilli-img-left {
   height: 2rem;
-  margin-left: -20px;
+  margin-left: -30px;
 }
 
 .chilli-img-right {
   height: 2rem;
-  margin-right: -20px;
+  margin-right: -30px;
 }
 
 }
