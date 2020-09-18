@@ -65,6 +65,7 @@ const Wrapper = styled.div`
     -ms-transform: translate(-50%, -50%);
     z-index: 1;
     margin-top: 0;
+    
 
 }
 
@@ -90,12 +91,17 @@ const Wrapper = styled.div`
   border-radius: var(--radius);
 }
 
-
-.order:hover {
-  background: var(--greenrgba);
+.closed-button:hover{
+  background: var(--redrgba);
   /* transform: translateY(-3px); */
+  
 }
 
+.open-button:hover{
+  background: var(--greenrgba);
+  /* transform: translateY(-3px); */
+  
+}
 .open-button {
   background: var(--green)
 }

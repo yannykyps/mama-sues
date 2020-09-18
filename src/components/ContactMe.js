@@ -172,6 +172,8 @@ h1 {
   padding-bottom: 50px;
   color: white;
   text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
 }
 
 

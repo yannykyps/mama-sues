@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import logo from "../images/logomamasues.svg"
+import logo from "../images/logosquare.svg"
 
 
 const query = graphql`
@@ -111,6 +111,8 @@ h1 {
   padding-top: 100px;
   padding-bottom: 50px;
   color: white;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
 
 }
 

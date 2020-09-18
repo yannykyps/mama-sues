@@ -12,15 +12,17 @@ const GatsbyProvider = ({children}) => {
     const [isOpen, setIsOpen] = useState("closed");
 
     const isOpenEffect = useEffect(() => {
+        console.log("test")
         if (moment(time, format).isBetween(open, close)) {
           setIsOpen("open");
         } else {
           setIsOpen("closed");
         }
-      }, [isOpen, time, close, open, format]);
+      }, [time, open, close]);
     return <GatsbyContext.Provider value={{isOpen, isOpenEffect}}>
     {children}
     </GatsbyContext.Provider>
 }
-
+// [isOpen, time, close, open, format]
+// 
 export {GatsbyContext, GatsbyProvider}

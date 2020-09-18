@@ -66,14 +66,20 @@ const Wrapper = styled.section`
   display: inline-block;
    -webkit-transition: var(--transition);
   /* transition: var(--transition); */
-  transition: transform 0.2s ease;
+  transition: var(--transition);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 
 
-.order:hover {
+.closed-button:hover{
+  background: var(--redrgba);
+  /* transform: translateY(-3px); */
+  
+}
+
+.open-button:hover{
   background: var(--greenrgba);
   /* transform: translateY(-3px); */
   
@@ -114,6 +120,9 @@ const Wrapper = styled.section`
   font-size: 1rem;
   border: 1px solid transparent;
 }
+.tel {
+  font-size: 1.75rem;
+}
   }
   @media screen and (min-width: 768px) {
     .order {
@@ -123,5 +132,10 @@ const Wrapper = styled.section`
   font-size: 1.5rem;
   border: 2px solid transparent;
 }
+
+.tel {
+  font-size: 2rem;
+}
+
   }
   `

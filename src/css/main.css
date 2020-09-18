@@ -11,6 +11,7 @@
   --grey: #323232;
   --black: #000000;
   --greenrgba: rgba(125, 172, 32, 0.5);
+  --redrgba: rgba(210, 30, 75, 0.5);
 }
 
 body {

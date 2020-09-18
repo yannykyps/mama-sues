@@ -53,7 +53,7 @@ const Wrapper = styled.div`
 .tel {
   font-size: 2rem;
   text-align: center;
-  margin: 1.5rem 0;
+  margin-bottom: 1rem;
 }
 
 .tel a {
@@ -83,7 +83,7 @@ const Wrapper = styled.div`
   text-align: center;
   text-transform: capitalize;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   transition: var(--transition);
   border-radius: var(--radius);

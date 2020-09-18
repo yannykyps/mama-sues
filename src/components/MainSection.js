@@ -86,7 +86,10 @@ margin: auto;
     color: white;
 }
 
-
+.signature h2 {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
 
 .div-title {
     color: white;

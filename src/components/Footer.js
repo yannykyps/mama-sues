@@ -24,7 +24,7 @@ const Footer = () => {
       </div>
       <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
       </div>
-      <div>
+      <div className="social-div">
       <p><strong>Social</strong></p>
       <SocialLinks styleClass="social-footer"/>
       </div>
@@ -43,6 +43,8 @@ const Wrapper = styled.footer`
   background: var(--black);
   text-align: center;
   padding: 1rem;
+  max-width: 1170px;
+  margin: auto;
   p, .footer-address address {
     color: white;
     margin-bottom: 0;
@@ -68,8 +70,8 @@ const Wrapper = styled.footer`
 
   .top {
     font-size: 2rem;
-    margin: -40px 0 -20px;
-    z-index: 999;
+    margin: -20px 0 -20px;
+    /* z-index: 999; */
 
   }
 
@@ -84,6 +86,11 @@ const Wrapper = styled.footer`
     width: 10rem;
   /* margin: auto; */
   }
+
+  .social-div p {
+    visibility: hidden;
+    margin-top: -16px;
+  }
 }
 
   @media screen and (min-width: 768px) {
@@ -96,6 +103,11 @@ const Wrapper = styled.footer`
     margin-top: 16px;
     width: 12rem;
   /* margin: auto; */
+  }
+
+  .social-div p {
+    visibility: visible;
+    margin-top: 16px;
   }
 }
   

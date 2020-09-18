@@ -37,18 +37,20 @@ export default HeroTitle
 const Wrapper = styled.div`
 
 .info-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 374px) {
     .info-title {
-      font-size: 2rem;
+      font-size: 2.25rem;
 
 }
   }
   @media screen and (min-width: 768px) {
     .info-title {
-      font-size: 2.75rem;
+      font-size: 3.5rem;
 }
   }
 `

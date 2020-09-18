@@ -13,6 +13,21 @@ module.exports = {
     siteUrl: "https://www.mamasues.netlify.app",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-178447221-1',
+          head: true,
+          anonymize: true
+        },
+        facebookPixel: {
+          pixelId: 'YOUR_FACEBOOK_PIXEL_ID'
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -51,6 +66,9 @@ module.exports = {
         fonts: [
           {
             family: `Karla`,
+          },
+          {
+            family: `Satisfy`,
           },
         ],
       },
