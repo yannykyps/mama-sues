@@ -26,7 +26,7 @@ const Contact = () => {
         {images.map((item, index) => {
             return (<a href={`/${item.title}`} key={index}><article key={index} className="contact">
             <div className="contact-overlay"><h3 className="contact-title">{item.image.title}</h3></div>
-             <Image fluid={item.image.fluid} className="contact-img"/>
+             <Image fluid={item.image.fluid} className="contact-img" alt={item.title}/>
             </article></a>
             )
         })} 

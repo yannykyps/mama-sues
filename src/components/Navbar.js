@@ -12,7 +12,7 @@ const Navbar = ({toggleSidebar}) => {
             <div className="nav-center">
             <div className="nav-header">
             <img className="logo" src={logo} alt="logo"/>
-                <button className="toggle-btn" onClick={toggleSidebar}>
+                <button className="toggle-btn" onClick={toggleSidebar} aria-label="toggle sidebar">
                 <HiMenu />
                 </button>
             </div>

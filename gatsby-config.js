@@ -70,10 +70,6 @@ module.exports = {
           {
             family: `Satisfy`,
           },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
         ],
       },
     }
