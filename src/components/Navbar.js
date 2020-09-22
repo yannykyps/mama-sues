@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logosquare.svg"
+import logo from "../images/logotest-01.svg"
 import { HiMenu } from "react-icons/hi"
 
 
@@ -36,18 +36,18 @@ const Wrapper = styled.section`
   align-items: center;
   z-index: 200;
   /* testing */
-  /* background: black; */
+  background: var(--back-primary);
 }
 
 .logo {
-  width: 150px;
-  margin-top: 80px;
-  font-family:'Kristen ITC';
+  /* width: 150px; */
+  /* margin-top: 20px; */
+  /* font-family:'Kristen ITC'; */
 }
 
 .nav-center {
   width: 95vw;
-  max-width: 1170px;
+  /* max-width: 1170px; */
   margin: 0 auto;
 }
 
@@ -82,8 +82,8 @@ const Wrapper = styled.section`
 }
 @media screen and (min-width: 319px) {
 .logo {
-  width: 100px;
-  margin-top: 40px;
+  width: 250px;
+  margin-top: 0px;
 }
 
 }
@@ -93,8 +93,8 @@ const Wrapper = styled.section`
   }
 
   .logo {
-  width: 150px;
-  margin-top: 80px;
+  width: 250px;
+  margin-top: 0px;
 }
   .nav-links {
     display: flex;

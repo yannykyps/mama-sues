@@ -31,7 +31,7 @@ export default Sidebar
 const Wrapper = styled.div`
 .sidebar {
   /* background: var(--clr-light-shade); */
-  background: var(--black);
+  background: var(--back-primary);
   position: fixed;
   top: 0;
   left: 0;
@@ -57,11 +57,11 @@ const Wrapper = styled.div`
 }
 
 .tel a {
-  color: var(--red);
+  color: var(--green);
 }
 
 .tel a:hover {
-  color: var(--green);
+  color: var(--red);
 }
 
 .show-sidebar {

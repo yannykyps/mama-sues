@@ -4,8 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Special from './Special'
 import Contact from './Contact'
-import chilliRight from "../images/chilli.png"
-import chilliLeft from "../images/chilli1.png"
+import chilliRight from "../images/chilli2.png"
+import chilliLeft from "../images/chilli3.png"
 
 const query = graphql`
 {
@@ -62,6 +62,7 @@ export default MainSection
 
 const Wrapper = styled.section`
 margin: auto;
+/* background: var(--white); */
 
 .main-section {
     padding: 0;
@@ -79,11 +80,11 @@ margin: auto;
 
 .signature {
   padding: 0 2rem;
-    background: var(--black); 
+    background: var(--back-primary); 
     display: grid;
     text-align: center;
     position: relative;
-    color: white;
+    color: var(--white);
 }
 
 .signature h2 {
@@ -91,8 +92,11 @@ margin: auto;
   font-weight: 400;
 }
 
+.signature h3 {
+  color: var(--white)
+}
 .div-title {
-    color: white;
+    color: var(--black);
     /* position: absolute;
     top: 60px;
     left: 50%;
@@ -118,7 +122,7 @@ margin: auto;
     margin-top: 0; */
 
 section h3 {
-    color: white;
+    color: var(--black);
 }
 
 .img {
@@ -232,7 +236,7 @@ section h3 {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    max-width: 1170px;
+    /* max-width: 1170px; */
     padding-top: 0px;
     /* display: grid; */
     grid-template-areas:

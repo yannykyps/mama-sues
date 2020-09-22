@@ -8,8 +8,11 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --red: #d21e4b;
   --green: #7dac20;
-  --grey: #323232;
+  --grey: #6a6a6a;
   --black: #000000;
+  --back-primary: #d14a00;
+  --white: #ffffff;
+
   --greenrgba: rgba(125, 172, 32, 0.5);
   --redrgba: rgba(210, 30, 75, 0.5);
 }
@@ -17,7 +20,7 @@
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
-  background: var(--black);
+  background: var(--white);
   line-height: 1.5;
 }
 

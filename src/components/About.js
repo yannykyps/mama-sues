@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import logo from "../images/logosquare.svg"
+import logo from "../images/logotest-01.svg"
 
 
 const query = graphql`
@@ -67,14 +67,14 @@ const {allContentfulAbout:{nodes:about},} = useStaticQuery(query);
 export default About
 
 const Wrapper = styled.section`
-max-width: 1170px;
+/* max-width: 1170px; */
 margin: auto;
 
 .about-section {  
   margin-top: -5vw;
   background: var(--grey);
   padding-bottom: 50px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: center; 
   padding-left: 50px;
   padding-right: 50px;
@@ -96,7 +96,7 @@ header {
   position: relative;
   height: 250px;
   text-align: center;
-  background: var(--black);
+  background: var(--back-primary);
   clip-path: polygon(
     0 0,
     100% 0,

@@ -30,9 +30,11 @@ const Footer = () => {
       </div>
       
     </div>
+ 
       <p>
         &copy; {new Date().getFullYear()} Mama Sue's Cook House. Site by <a href="https://yannyweb.com" target="_new">yannyweb.</a>
       </p>
+  
     </Wrapper>
   )
 }
@@ -40,13 +42,13 @@ const Wrapper = styled.footer`
   /* height: 10rem; */
   display: grid;
   place-items: center;
-  background: var(--black);
+  background: var(--back-primary);
   text-align: center;
   padding: 1rem;
-  max-width: 1170px;
+  /* max-width: 1170px; */
   margin: auto;
   p, .footer-address address {
-    color: white;
+    color: var(--white);
     margin-bottom: 0;
     @media (max-width: 576px) {
       font-size: 0.75rem;
@@ -57,7 +59,7 @@ const Wrapper = styled.footer`
     margin-bottom: 16px;
   }
   a {
-    color: var(--red);
+    color: var(--green);
     margin-bottom: 0;
     
     @media (max-width: 576px) {
@@ -65,7 +67,7 @@ const Wrapper = styled.footer`
     }
   }
   a:hover {
-    color: var(--green);
+    color: var(--red);
   }
 
   .top {

@@ -44,12 +44,12 @@ const Wrapper = styled.section`
   .bcg {
     /* MUST!!!!!! */
     min-height: 100vh;
-    /* margin-top: 0rem; */
+    margin-top: 5rem;
     display: grid;
     place-items: center;
     animation: ${fadeIn} 2s ease-in-out 1 forwards;
-    max-width: 1170px; 
-    margin: 0 auto;
+    /* max-width: 1170px;  */
+    /* margin: 0 auto; */
 
   }
 

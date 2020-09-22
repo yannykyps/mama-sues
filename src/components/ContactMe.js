@@ -55,7 +55,7 @@ const Wrapper = styled.section`
   text-align: center; 
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .address-section {
@@ -156,7 +156,7 @@ header {
   margin-top: 5rem;  
   position: relative;
   height: 250px;
-  background: var(--black);
+  background: var(--back-primary);
   clip-path: polygon(
     0 0,
     100% 0,

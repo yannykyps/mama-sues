@@ -41,6 +41,9 @@ const Wrapper = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 
+a {
+  margin-bottom: 0;
+}
 .contact {
   overflow:hidden;
   position: relative;

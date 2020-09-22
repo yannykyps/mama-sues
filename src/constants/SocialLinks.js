@@ -59,7 +59,7 @@ const Wrapper = styled.section`
 }
 
 .social-link:hover {
-  color: var(--red);
+  color: var(--green);
 }
 
 .social-link {
