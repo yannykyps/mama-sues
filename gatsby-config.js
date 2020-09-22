@@ -21,10 +21,6 @@ module.exports = {
           head: true,
           anonymize: true
         },
-        facebookPixel: {
-          pixelId: 'YOUR_FACEBOOK_PIXEL_ID'
-        },
-        // Defines the environments where the tracking should be available  - default is ["production"]
         environments: ['production', 'development']
       },
     },
@@ -51,7 +47,6 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -72,6 +67,7 @@ module.exports = {
           },
         ],
       },
-    }
+    },
+    `gatsby-plugin-offline`,
   ],
 }

@@ -6,14 +6,15 @@ const GlobalStyle = createGlobalStyle`
 
 /*  global classes */
 
+
 :root {
   --transition: all 0.3s linear;
   --radius: 0.25rem;
   --spacing: 0.2rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --red: #d21e4b;
-  --green: #7dac20;
+  --red: #d1001f;
+  --green: #00d14a;
   --grey: #6a6a6a;
   --black: #000000;
   --back-primary: #d14a00;
@@ -30,11 +31,6 @@ body {
   line-height: 1.5;
 }
 
-/* .section-center {
-  width: 100vw;
-  margin: 0 auto;
-  max-width: 1170px;
-} */
 
 ul {
   list-style-type: none;
@@ -109,6 +105,8 @@ h4 {
 }
 
 `
+
+
 
 export const wrapRootElement = ({element}) => {
     return <>

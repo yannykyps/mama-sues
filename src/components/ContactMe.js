@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from "styled-components"
+import Title from './Title'
 
 
 const ContactMe = () => {
     return (
       <Wrapper>
-      <header>
-      <h1>Contact Us</h1>
-    </header>
+      <Title title="Contact Us"/>
     <section className="contactMe-section">
     <h1>Get In Touch</h1>
     <p>Opening Times: Mon-Sun 1700 - 2300</p>
@@ -21,7 +20,6 @@ const ContactMe = () => {
       </div>
       </article>
       <article className="contact-form">
-        
         <form name="contact" action="/success" data-netlify="true" data-netlify-honeypot="bot-field" method="POST">
         <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
@@ -35,10 +33,8 @@ const ContactMe = () => {
           </div>
           <button type="submit" className="submit-btn btn">Submit</button>
         </form>
-      </article>
-      
-</section>
-
+      </article>  
+    </section>
     </Wrapper>
     )
 }

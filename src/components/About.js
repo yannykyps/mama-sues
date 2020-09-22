@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import logo from "../images/logotest-01.svg"
+import Title from './Title'
 
 
 const query = graphql`
@@ -44,22 +45,16 @@ const About = () => {
 const {allContentfulAbout:{nodes:about},} = useStaticQuery(query);
     return (
         <Wrapper>
-         <header>
-  <h1>About</h1>
-</header>
-
-<section className="about-section">
-  <h1>{about[0].title}</h1>
-  <Image fluid={about[0].image.fluid} className="about-img"/>
-  <p>{about[0].content1.content1}</p>
-  <Image fluid={about[0].image2.fluid} className="about-img" alt="logo"/>
-  <p>{about[0].content2.content2}</p>
-  
-  <img className="about-logo" alt="logo" src={logo} />
-  <p>{about[0].content3.content3}</p>
-
-
-</section>  
+        <Title title="About" />
+        <section className="about-section">
+          <h1>{about[0].title}</h1>
+        <Image fluid={about[0].image.fluid} className="about-img"/>
+          <p>{about[0].content1.content1}</p>
+        <Image fluid={about[0].image2.fluid} className="about-img" alt="logo"/>
+          <p>{about[0].content2.content2}</p>
+          <img className="about-logo" alt="logo" src={logo} />
+          <p>{about[0].content3.content3}</p>
+        </section>  
         </Wrapper>
     )
 }
@@ -88,22 +83,7 @@ margin: auto;
 } 
 
 .about-logo {
-    width: 300px;
-}
-
-header {
-  margin-top: 5rem;  
-  position: relative;
-  height: 250px;
-  text-align: center;
-  background: var(--back-primary);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 5vw)
-  );
-  /* change the calc height to a percentage height to get alternate responsive behavior*/
+    width: 500px;
 }
 
 h1 {

@@ -56,6 +56,7 @@ const Wrapper = styled.section`
   font-size: 3rem;
   color: white;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .social-link:hover {

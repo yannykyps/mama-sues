@@ -12,7 +12,6 @@ const GatsbyProvider = ({children}) => {
     const [isOpen, setIsOpen] = useState("closed");
 
     const isOpenEffect = useEffect(() => {
-        console.log("test")
         if (moment(time, format).isBetween(open, close)) {
           setIsOpen("open");
         } else {

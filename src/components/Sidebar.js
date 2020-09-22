@@ -100,8 +100,9 @@ const Wrapper = styled.div`
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: var(--red);
+  color: var(--green);
   cursor: pointer;
+  
 }
 
 @media screen and (min-width: 992px) {
