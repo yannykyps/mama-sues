@@ -83,7 +83,7 @@ margin: auto;
 } 
 
 .about-logo {
-    width: 500px;
+    width: 300px;
 }
 
 h1 {

@@ -1,8 +1,6 @@
 import React from 'react'
 import logo from "../images/logotest-01.svg"
 import { HiMenu } from "react-icons/hi"
-
-
 import Links from "../constants/links"
 import styled from "styled-components"
 
@@ -35,7 +33,6 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   z-index: 200;
-  /* testing */
   background: var(--back-primary);
 }
 

@@ -14,7 +14,6 @@ const Footer = () => {
     <p>MON - SUN | 17:00 - 23:00</p>
     </div>
     <div className="footer-address">
-    
       <div className="address">
       <p><strong>Find Us</strong></p>
       <address>123 Stetchford Road</address>
@@ -28,13 +27,10 @@ const Footer = () => {
       <p><strong>Social</strong></p>
       <SocialLinks styleClass="social-footer"/>
       </div>
-      
     </div>
- 
       <p>
         &copy; {new Date().getFullYear()} Mama Sue's Cook House. Site by <a href="https://yannyweb.com" target="_new">yannyweb.</a>
       </p>
-  
     </Wrapper>
   )
 }
