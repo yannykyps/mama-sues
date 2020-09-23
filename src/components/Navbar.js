@@ -34,7 +34,10 @@ const Wrapper = styled.section`
   align-items: center;
   z-index: 200;
   background: rgb(208,77,0);
+  background: -moz-linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
 background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d04d00",endColorstr="#f3af00",GradientType=1);
 }
 
 .nav-center {
@@ -76,6 +79,7 @@ background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
 .logo {
   width: 150px;
   margin-top: 0px;
+  margin-left: 10px;
 }
 
 }
@@ -87,6 +91,7 @@ background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
   .logo {
   width: 150px;
   margin-top: 0px;
+  margin-left: 10px;
 }
   .nav-links {
     display: flex;

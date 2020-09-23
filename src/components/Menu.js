@@ -8,7 +8,7 @@ const Menu = () => {
         <Wrapper>
         <Title title="Menu" />
         <section className="menu-section">
-            <h1>Menu goes here</h1>
+            <h2>Menu goes here</h2>
             <p>...</p>
         </section>  
         </Wrapper>
@@ -40,7 +40,7 @@ margin: auto;
 } 
 
 
-h1 {
+.menu-section h2 {
   margin: 0;
   padding-top: 100px;
   padding-bottom: 50px;

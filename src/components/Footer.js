@@ -39,7 +39,10 @@ const Wrapper = styled.footer`
   display: grid;
   place-items: center;
   background: rgb(208,77,0);
-background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
+  background: -moz-linear-gradient(180deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
+background: linear-gradient(180deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d04d00",endColorstr="#f3af00",GradientType=1);
   text-align: center;
   padding: 1rem;
   /* max-width: 1170px; */
@@ -56,7 +59,7 @@ background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
     margin-bottom: 16px;
   }
   a {
-    color: var(--blue);
+    color: var(--green);
     margin-bottom: 0;
     
     @media (max-width: 576px) {
@@ -64,7 +67,7 @@ background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
     }
   }
   a:hover {
-    color: var(--red);
+    color: var(--pink);
   }
 
   .top {

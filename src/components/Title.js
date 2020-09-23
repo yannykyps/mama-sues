@@ -14,10 +14,10 @@ export default Title
 const Wrapper = styled.header`
     margin-top: 5rem;  
     position: relative;
-    height: 300px;
+    height: 200px;
     text-align: center;
-    background: var(--back-primary);
-
+    background: var(--grey);
+    
   
 
   h1 {

@@ -62,7 +62,7 @@ background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
 }
 
 .tel a:hover {
-  color: var(--red);
+  color: var(--pink);
 }
 
 .show-sidebar {

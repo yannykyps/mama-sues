@@ -8,7 +8,7 @@ const ContactMe = () => {
       <Wrapper>
       <Title title="Contact Us"/>
     <section className="contactMe-section">
-    <h1>Get In Touch</h1>
+    <h2>Get In Touch</h2>
     <p>Opening Times: Mon-Sun 1700 - 2300</p>
     <article className="address-section">
       <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
@@ -54,6 +54,15 @@ const Wrapper = styled.section`
   /* margin-bottom: 20px; */
 }
 
+
+.contactMe-section h2 {
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
 .address-section {
   padding-bottom: 50px;
   text-align: center; 
@@ -149,14 +158,6 @@ const Wrapper = styled.section`
 }
 
 
-h1 {
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  text-align: center;
-  font-family: 'Satisfy', cursive;
-  font-weight: 400;
-}
 
 
 `

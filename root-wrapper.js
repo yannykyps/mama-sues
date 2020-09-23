@@ -15,14 +15,15 @@ const GlobalStyle = createGlobalStyle`
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --red: #d1001f;
   /* --green: #00d14a; */
-  --green: #38f4b6;
+  --green: #00d14a;
   
   --grey: #6a6a6a;
   --black: #000000;
-  /* --back-primary: #d14a00; */
-  --back-primary: #f4b638;
+  --back-primary: #f3af00;
+  /* --back-primary: #f4b638; */
   --white: #ffffff;
-  --blue: #3876f4;
+  --blue: #0087d1;
+  --pink: #d10087;
 
   --greenrgba: rgba(125, 172, 32, 0.5);
   --redrgba: rgba(210, 30, 75, 0.5);

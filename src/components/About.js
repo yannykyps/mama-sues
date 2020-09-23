@@ -47,7 +47,7 @@ const {allContentfulAbout:{nodes:about},} = useStaticQuery(query);
         <Wrapper>
         <Title title="About" />
         <section className="about-section">
-          <h1>{about[0].title}</h1>
+          <h2>{about[0].title}</h2>
         <Image fluid={about[0].image.fluid} className="about-img"/>
           <p>{about[0].content1.content1}</p>
         <Image fluid={about[0].image2.fluid} className="about-img" alt="logo"/>
@@ -87,7 +87,7 @@ background: var(--grey);
     width: 300px;
 }
 
-.about-section h1 {
+.about-section h2 {
   margin: 0;
   padding-top: 100px;
   padding-bottom: 50px;
