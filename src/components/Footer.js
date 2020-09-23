@@ -38,7 +38,8 @@ const Wrapper = styled.footer`
   /* height: 10rem; */
   display: grid;
   place-items: center;
-  background: var(--back-primary);
+  background: rgb(208,77,0);
+background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
   text-align: center;
   padding: 1rem;
   /* max-width: 1170px; */

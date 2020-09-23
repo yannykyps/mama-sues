@@ -31,7 +31,8 @@ export default Sidebar
 const Wrapper = styled.div`
 .sidebar {
   /* background: var(--clr-light-shade); */
-  background: var(--back-primary);
+  background: rgb(208,77,0);
+background: linear-gradient(0deg, rgba(208,77,0,1) 0%, rgba(243,175,0,1) 100%);
   position: fixed;
   top: 0;
   left: 0;
