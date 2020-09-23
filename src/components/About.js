@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import logo from "../images/logotest-01.svg"
+import logo from "../images/logofinal.svg"
 import Title from './Title'
 
 
@@ -64,9 +64,10 @@ export default About
 const Wrapper = styled.section`
 /* max-width: 1170px; */
 margin: auto;
+background: var(--grey);
 
 .about-section {  
-  margin-top: -5vw;
+  /* margin-top: -5vw; */
   background: var(--grey);
   padding-bottom: 50px;
   /* margin-bottom: 20px; */
@@ -76,7 +77,7 @@ margin: auto;
 }
 
 .about-section p {
-    color: white;
+    color: var(--black);
     /* width: 90vh; */
     margin: 50px auto;
     max-width: 100vh;
@@ -86,11 +87,10 @@ margin: auto;
     width: 300px;
 }
 
-h1 {
+.about-section h1 {
   margin: 0;
   padding-top: 100px;
   padding-bottom: 50px;
-  color: white;
   font-family: 'Satisfy', cursive;
   font-weight: 400;
 

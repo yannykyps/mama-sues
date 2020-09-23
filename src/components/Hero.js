@@ -16,7 +16,7 @@ const Hero = () => {
       <article className="hero-info">
           <HeroTitle />
           <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
-          <h2>We are <span className={isOpen}>{isOpen}</span></h2>
+          <h3>We are <span className={isOpen}>{isOpen}</span>, and will open at 1700</h3>
           {isOpen === "open" ? <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Order Now</a>:
           <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Pre-Order</a>}
           <SocialLinks styleClass="social"/>
@@ -40,6 +40,7 @@ const Wrapper = styled.section`
 .social {
   margin: auto;
   margin-top: 2rem;
+  color: var(--white);
 
 }
 

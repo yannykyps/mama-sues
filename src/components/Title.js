@@ -14,24 +14,30 @@ export default Title
 const Wrapper = styled.header`
     margin-top: 5rem;  
     position: relative;
-    height: 250px;
+    height: 300px;
     text-align: center;
     background: var(--back-primary);
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      0 calc(100% - 5vw)
-    );
-    /* change the calc height to a percentage height to get alternate responsive behavior*/
+
   
+
   h1 {
     margin: 0;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    color: white;
+    padding: 100px 0;
+    /* padding-bottom: 50px; */
+    text-align: center;
     font-family: 'Satisfy', cursive;
     font-weight: 400;
-  
+    
+  }
+
+  header h1 {
+    position: relative;
+    color: var(--blue);
+    margin: 0;
+    padding: 100px 0;
+    /* padding-bottom: 50px; */
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
   }
   `

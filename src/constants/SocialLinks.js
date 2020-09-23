@@ -52,20 +52,16 @@ const Wrapper = styled.section`
   padding-inline-start: 0px;
 }
 
-.social-link {
-  font-size: 3rem;
-  color: white;
-  transition: var(--transition);
-  cursor: pointer;
-}
-
 .social-link:hover {
   color: var(--green);
 }
 
 .social-link {
-  color: white;
+  /* color: var(--black); */
   transition: var(--transition);
+  font-size: 3rem;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 374px) {

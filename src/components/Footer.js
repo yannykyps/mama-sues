@@ -44,7 +44,7 @@ const Wrapper = styled.footer`
   /* max-width: 1170px; */
   margin: auto;
   p, .footer-address address {
-    color: var(--white);
+    color: var(--black);
     margin-bottom: 0;
     @media (max-width: 576px) {
       font-size: 0.75rem;
@@ -55,7 +55,7 @@ const Wrapper = styled.footer`
     margin-bottom: 16px;
   }
   a {
-    color: var(--green);
+    color: var(--blue);
     margin-bottom: 0;
     
     @media (max-width: 576px) {
@@ -100,6 +100,7 @@ const Wrapper = styled.footer`
   .social-footer {
     margin-top: 16px;
     width: 12rem;
+    /* color: var(--black); */
   /* margin: auto; */
   }
 

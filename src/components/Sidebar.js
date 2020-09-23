@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 }
 
 .address {
-  color: white;
+  color: var(--black);
   text-align: center;
 }
 
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
 }
 
 .tel a {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .tel a:hover {
@@ -82,7 +82,7 @@ const Wrapper = styled.div`
   display: block;
   text-align: center;
   text-transform: capitalize;
-  color: white;
+  color: var(--black);
   margin-bottom: 1rem;
   font-size: 2rem;
   transition: var(--transition);
@@ -90,7 +90,7 @@ const Wrapper = styled.div`
 }
 
 .sidebar-links li a:hover {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .close-btn {
@@ -100,9 +100,13 @@ const Wrapper = styled.div`
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: var(--green);
+  color: var(--red);
   cursor: pointer;
-  
+  transition: var(--transition);
+}
+
+.close-btn:hover {
+  color: var(--blue);
 }
 
 @media screen and (min-width: 992px) {

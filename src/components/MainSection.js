@@ -33,10 +33,14 @@ const MainSection = () => {
            
            <h2 >
            <img className="chilli-img-left" alt="logo" src={chilliLeft} />
-           Signature Dishes
+           "From Our Kitchen To Your Plate"
            <img className="chilli-img-right" alt="logo" src={chilliRight} />
            </h2>
            <h3>We pride ourselves on making tasty dishes</h3>
+           <p>Welcome to Mama Sue’s Cook House. A tasty fast food restaurant located in Birmingham. We specialise in a select number of dishes to make sure you get the best takeaway food in Birmingham.</p>
+           <p>Our <a href="/menu">menu</a> is a British Indian take on modern classics but with a twist. We specialise in chicken wings, hotdogs, burgers and wraps to name a few. </p>
+           <p>Want to try the best chicken wings in Birmingham? then you have to try our selection of tasty chicken wings; all unique with loads of flavour right down to the bone. Prefer boneless wings? We provide the same unique flavours for you to choose from.</p>
+           <p>Check out our <a href="/menu">menu</a> today, and see what all the fuss is about. </p>
            </article>
            
            {images.map((item, index) => {
@@ -84,16 +88,17 @@ margin: auto;
     display: grid;
     text-align: center;
     position: relative;
-    color: var(--white);
+    color: var(--black);
 }
 
 .signature h2 {
   font-family: 'Satisfy', cursive;
   font-weight: 400;
+  color: var(--blue);
 }
 
 .signature h3 {
-  color: var(--white)
+  color: var(--black)
 }
 .div-title {
     color: var(--black);

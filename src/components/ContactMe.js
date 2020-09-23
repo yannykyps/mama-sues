@@ -44,7 +44,7 @@ export default ContactMe
 const Wrapper = styled.section`
 
 .contactMe-section {  
-  margin-top: -5vw;
+  /* margin-top: -5vw; */
   /* background-image: linear-gradient(135deg, #777, #111); */
   background: var(--grey);
   padding-bottom: 50px;
@@ -62,7 +62,7 @@ const Wrapper = styled.section`
 }
 
 .address {
-  color: white;
+  color: var(--black);
   text-align: center;
 }
 
@@ -81,7 +81,7 @@ const Wrapper = styled.section`
 }
 
 .contactMe-section p {
-    color: white;
+    color: var(--black);
     margin: auto;
     max-width: 100vh;
 } 
@@ -145,28 +145,14 @@ const Wrapper = styled.section`
 }
 
 .submit-btn:hover {
-  background: var(--red);
+  background: var(--blue);
 }
 
-header {
-  margin-top: 5rem;  
-  position: relative;
-  height: 250px;
-  background: var(--back-primary);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 5vw)
-  );
-  /* change the calc height to a percentage height to get alternate responsive behavior*/
-}
 
 h1 {
   margin: 0;
   padding-top: 100px;
   padding-bottom: 50px;
-  color: white;
   text-align: center;
   font-family: 'Satisfy', cursive;
   font-weight: 400;

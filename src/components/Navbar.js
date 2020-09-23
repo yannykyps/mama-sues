@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logotest-01.svg"
+import logo from "../images/logofinal.svg"
 import { HiMenu } from "react-icons/hi"
 import Links from "../constants/links"
 import styled from "styled-components"
@@ -36,12 +36,6 @@ const Wrapper = styled.section`
   background: var(--back-primary);
 }
 
-.logo {
-  /* width: 150px; */
-  /* margin-top: 20px; */
-  /* font-family:'Kristen ITC'; */
-}
-
 .nav-center {
   width: 95vw;
   /* max-width: 1170px; */
@@ -65,13 +59,13 @@ const Wrapper = styled.section`
   top: 30%;
   background: transparent;
   border-color: transparent;
-  color: white;
+  color: var(--black);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .toggle-btn:hover {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .nav-links {
@@ -79,7 +73,7 @@ const Wrapper = styled.section`
 }
 @media screen and (min-width: 319px) {
 .logo {
-  width: 250px;
+  width: 150px;
   margin-top: 0px;
 }
 
@@ -90,7 +84,7 @@ const Wrapper = styled.section`
   }
 
   .logo {
-  width: 250px;
+  width: 150px;
   margin-top: 0px;
 }
   .nav-links {
@@ -104,7 +98,7 @@ const Wrapper = styled.section`
 
   .nav-links a {
     text-transform: capitalize;
-    color: white;
+    color: var(--black);
     font-weight: bold;
     letter-spacing: var(--spacing);
     transition: var(--transition);
@@ -112,7 +106,7 @@ const Wrapper = styled.section`
   }
 
   .nav-links a:hover {
-    color: var(--green);
+    color: var(--blue);
     box-shadow: 0px 2px var(--clr-ui-success);
   }
 

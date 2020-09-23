@@ -14,11 +14,15 @@ const GlobalStyle = createGlobalStyle`
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --red: #d1001f;
-  --green: #00d14a;
+  /* --green: #00d14a; */
+  --green: #38f4b6;
+  
   --grey: #6a6a6a;
   --black: #000000;
-  --back-primary: #d14a00;
+  /* --back-primary: #d14a00; */
+  --back-primary: #f4b638;
   --white: #ffffff;
+  --blue: #3876f4;
 
   --greenrgba: rgba(125, 172, 32, 0.5);
   --redrgba: rgba(210, 30, 75, 0.5);
@@ -27,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
-  background: var(--white);
+  /* background: var(--white); */
   line-height: 1.5;
 }
 
@@ -39,6 +43,11 @@ ul {
 a {
   text-decoration: none;
   font-family: "Karla", sans-serif;
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--red);
 }
 
 h1,
