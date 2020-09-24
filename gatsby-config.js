@@ -14,14 +14,11 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gdpr-cookies`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        googleAnalytics: {
-          trackingId: 'UA-178447221-1',
-          head: true,
-          anonymize: true
-        },
-        environments: ['production', 'development']
+        trackingId: "UA-178447221-1",
+        head: true,
+        anonymize: true,
       },
     },
     `gatsby-plugin-sitemap`,
