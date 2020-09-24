@@ -24,6 +24,7 @@ module.exports = {
         environments: ['production', 'development']
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
