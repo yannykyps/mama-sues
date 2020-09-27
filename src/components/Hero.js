@@ -16,7 +16,7 @@ const Hero = () => {
       <article className="hero-info">
           <HeroTitle />
           <div className="tel"><a href="tel:01216884114">0121 688 4114</a></div>
-          <h3>We are <span className={isOpen}>{isOpen}</span>, and will open at 1700</h3>
+          <h3>We are <span className={isOpen}>{isOpen}</span></h3>
           {isOpen === "open" ? <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Order Now</a>:
           <a className={`order ${isOpen}-button`} href="https://www.orderswift.com/" target="_new">Pre-Order</a>}
           <SocialLinks styleClass="social"/>

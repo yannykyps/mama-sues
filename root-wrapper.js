@@ -68,11 +68,12 @@ h4 {
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1rem; 
+    /*1.75*/
   }
 
   h4 {
