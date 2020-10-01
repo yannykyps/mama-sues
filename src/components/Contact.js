@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import { Link } from "gatsby"
 
 const query = graphql`
 {
@@ -24,10 +25,10 @@ const Contact = () => {
     return (
         <Wrapper>
         {images.map((item, index) => {
-            return (<a href={`/${item.title}`} key={index}><article key={index} className="contact">
+            return (<Link to={`/${item.title}/`} key={index}><article key={index} className="contact">
             <div className="contact-overlay"><h3 className="contact-title">{item.image.title}</h3></div>
              <Image fluid={item.image.fluid} className="contact-img" alt={item.title}/>
-            </article></a>
+            </article></Link>
             )
         })} 
         </Wrapper>

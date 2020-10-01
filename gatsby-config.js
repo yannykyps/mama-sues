@@ -43,7 +43,19 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon_options: {
+          // For all the options available, please see the additional resources below.
+          purpose: `maskable`,
+        },
       },
+    },
+    {
+    resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://mamasues.netlify.app/',
+        sitemap: 'https://mamasues.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     {
       resolve: `gatsby-source-contentful`,
