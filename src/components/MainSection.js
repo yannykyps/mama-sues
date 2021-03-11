@@ -6,6 +6,7 @@ import Special from './Special'
 import Contact from './Contact'
 import chilliRight from "../images/chilli2.png"
 import chilliLeft from "../images/chilli3.png"
+import { Link } from "gatsby"
 
 const query = graphql`
 {
@@ -14,8 +15,8 @@ const query = graphql`
         id
         image {
           title
-          fluid {
-            ...GatsbyContentfulFluid
+          fluid(quality: 64, maxWidth: 1000) {
+            ...GatsbyContentfulFluid_withWebp
           }
         }
       }
@@ -31,16 +32,23 @@ const MainSection = () => {
            <section className="section-center">
            <article className="signature">
            
+           <div className="sign-grid">
+           <div><img className="chilli-img-left" alt="logo" src={chilliLeft} /></div>
+           
            <h2 >
-           <img className="chilli-img-left" alt="logo" src={chilliLeft} />
            "From Our Kitchen To Your Plate"
-           <img className="chilli-img-right" alt="logo" src={chilliRight} />
            </h2>
+           <div>
+           <img className="chilli-img-right" alt="logo" src={chilliRight} />
+           </div>
+           
+           </div>
+           
            <h3>We pride ourselves on making tasty dishes</h3>
            <p>Welcome to Mama Sue’s Cook House. A tasty fast food restaurant located in Birmingham. We specialise in a select number of dishes to make sure you get the best takeaway food in Birmingham.</p>
-           <p>Our <a href="/menu">menu</a> is a British Indian take on modern classics but with a twist. We specialise in chicken wings, hotdogs, burgers and wraps to name a few. </p>
+           <p>Our <Link to="/menu/">menu</Link> is a British Indian take on modern classics but with a twist. We specialise in chicken wings, hotdogs, burgers and wraps to name a few. </p>
            <p>Want to try the best chicken wings in Birmingham? then you have to try our selection of tasty chicken wings; all unique with loads of flavour right down to the bone. Prefer boneless wings? We provide the same unique flavours for you to choose from.</p>
-           <p>Check out our <a href="/menu">menu</a> today, and see what all the fuss is about. </p>
+           <p>Check out our <Link to="/menu/">menu</Link> today, and see what all the fuss is about. </p>
            </article>
            
            {images.map((item, index) => {
@@ -149,14 +157,19 @@ section h3 {
   text-align: center;
 }
 
+.sign-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+}
+
 .chilli-img-left {
-  float: left;
+  /* float: left; */
   margin-bottom: -40px;
   height: 5rem;
 }
 
 .chilli-img-right {
-  float: right;
+  /* float: right; */
   margin-bottom: -40px;
   height: 5rem;
 }

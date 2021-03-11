@@ -5,7 +5,7 @@ import Links from "../constants/links"
 import styled from "styled-components"
 
 const Navbar = ({toggleSidebar}) => {
-    return (<Wrapper>
+    return (<Wrapper id="top">
         <nav className="navbar">
             <div className="nav-center">
             <div className="nav-header">

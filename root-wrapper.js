@@ -119,7 +119,7 @@ h4 {
 
 
 
-export const wrapRootElement = ({element}) => {
+export const wrapPageElement = ({element}) => {
     return <>
         <GlobalStyle/>
         <GatsbyProvider>{element}</GatsbyProvider>

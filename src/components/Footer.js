@@ -2,12 +2,15 @@ import React from "react"
 import styled from "styled-components"
 import SocialLinks from "../constants/SocialLinks"
 import { AiOutlineVerticalAlignTop } from "react-icons/ai"
-
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Footer = () => {
   return (
     <Wrapper>
-    <a className="top" href="#top" aria-label="Back to Top"><AiOutlineVerticalAlignTop /></a>
+    <div className="top">
+    <button  onClick={() => scrollTo("#top")} aria-label="Back to Top"><AiOutlineVerticalAlignTop /></button>
+    </div>
+    
     <div className="contact-info">
     <div>
     <p><strong>Opening Hours</strong></p>
@@ -70,11 +73,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d04d00",endCo
     color: var(--pink);
   }
 
-  .top {
-    font-size: 2rem;
-    margin: -20px 0 -20px;
-    /* z-index: 999; */
 
+  }
+  .top {
+    text-align: center;
+    margin: -20px 0 -20px;
+    button {
+      font-size: 2rem;
+      color: var(--clr-white);
+      transition: var(--transition);
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        color: var(--green);
+      }
+    }
   }
 
   @media screen and (min-width: 300px) {

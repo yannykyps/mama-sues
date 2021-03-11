@@ -66,16 +66,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
-        fonts: [
-          {
-            family: `Karla`,
-          },
-          {
-            family: `Satisfy`,
-          },
-        ],
+        fonts: [`Karla`, `Satisfy`],
+        display: "swap",
+        attributes: {
+          rel: "stylesheet preload prefetch",
+        },
       },
     },
     `gatsby-plugin-offline`,
