@@ -1,31 +1,39 @@
-import React from 'react'
+import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
 import styled, { keyframes } from "styled-components"
 
 const query = graphql`
-{
-  file(relativePath: {eq: "bcg-img.png"}) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
+  {
+    file(relativePath: { eq: "bcg-img.jpg" }) {
+      childImageSharp {
+        fluid(quality: 64, maxWidth: 1080) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
       }
     }
   }
-}
 `
 
-const Background = ({children}) => {
-    const {file: {
-        childImageSharp: {fluid},
-      },
-    } = useStaticQuery(query);
-    return (<Wrapper>
-    <BackgroundImage Tag="div" fluid={fluid} className="bcg" preserveStackingContext={true}>
-      {children}
-    </BackgroundImage>
-        </Wrapper>
-    )
+const Background = ({ children }) => {
+  const {
+    file: {
+      childImageSharp: { fluid },
+    },
+  } = useStaticQuery(query)
+  return (
+    <Wrapper>
+      <BackgroundImage
+        Tag="div"
+        fluid={fluid}
+        className="bcg"
+        loading="eager"
+        preserveStackingContext={true}
+      >
+        {children}
+      </BackgroundImage>
+    </Wrapper>
+  )
 }
 
 export default Background
@@ -40,7 +48,6 @@ const fadeIn = keyframes`
       `
 
 const Wrapper = styled.section`
-
   .bcg {
     /* MUST!!!!!! */
     min-height: 100vh;
@@ -50,7 +57,6 @@ const Wrapper = styled.section`
     animation: ${fadeIn} 2s ease-in-out 1 forwards;
     /* max-width: 1170px;  */
     /* margin: 0 auto; */
-
   }
 
   .bcg::before {
