@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
     </div>
       <p>
-        &copy; {new Date().getFullYear()} Mama Sue's Cook House. Site by <a href="https://yannyweb.com/" target="_new">yannyweb.</a>
+        &copy; {new Date().getFullYear()} Mama Sue's Cook House. Site by <a href="https://www.yannyweb.com/" target="_blank" rel="noopener noreferrer">yannyweb.</a>
       </p>
     </Wrapper>
   )
